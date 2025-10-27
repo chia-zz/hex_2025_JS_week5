@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="all.css" />
+  </head>
+  <body>
+    <!-- ticket section -->
+    <section class="ticket-area">
+      <div class="img-box">
+        <img
+          src="https://github.com/hexschool/2022-web-layout-training/blob/main/js_week5/main_img.png?raw=true"
+          alt="main-img"
+        /><img
+          src="https://github.com/hexschool/2022-web-layout-training/blob/main/js_week5/logo.png?raw=true"
+          alt="logo-pic"
+        />
+      </div>
+      <form class="ticket-form">
+        <h1 class="H4 title">
+          <img
+            src="/img/add.svg"
+            alt="add-icon"
+            style="margin-right: 4px"
+          />新增旅遊套票
+        </h1>
+
+        <div class="input-area">
+          <div class="input-group">
+            <label class="label-sm" for="ticketName">套票名稱</label>
+            <input
+              type="text"
+              placeholder="請填寫圖片名稱"
+              class="input-box-default"
+              id="ticketName"
+            />
+          </div>
+          <div class="input-group">
+            <label class="label-sm" for="imgUrl">圖片網址</label>
+            <input
+              type="text"
+              placeholder="請填寫圖片網址"
+              class="input-box-default"
+              id="imgUrl"
+            />
+          </div>
+          <div class="input-group">
+            <label class="label-sm" for="ticketArea">景點地區</label>
+            <select class="input-box-default" id="ticketArea">
+              <option value="" selected disabled>請選擇景點地區</option>
+              <option value="全部">全部</option>
+              <option value="台北">台北</option>
+              <option value="台中">台中</option>
+              <option value="高雄">高雄</option>
+              <option value="花蓮">花蓮</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label class="label-sm" for="ticketPrice">套票金額</label>
+            <input
+              type="number"
+              placeholder="請填寫套票金額"
+              class="input-box-default input-box-number"
+              id="ticketPrice"
+              min="0"
+            />
+          </div>
+          <div class="input-group">
+            <label class="label-sm" for="ticketSet">套票組數</label>
+            <input
+              type="number"
+              placeholder="請填寫套票組數"
+              class="input-box-default input-box-number"
+              id="ticketSet"
+              min="0"
+            />
+          </div>
+          <div class="input-group">
+            <label class="label-sm" for="ticketRate">套票星級</label>
+            <input
+              type="number"
+              placeholder="請填寫套票星級"
+              class="input-box-default input-box-number"
+              id="ticketRate"
+              min="1"
+              max="10"
+            />
+          </div>
+          <div class="input-group">
+            <label class="label-sm" for="ticketDesc">套票描述</label>
+            <textarea
+              class="input-box-default"
+              id="ticketDesc"
+              rows="10"
+              cols="10"
+              placeholder="請填寫套票描述（限100字）"
+            ></textarea>
+          </div>
+        </div>
+        <input type="button" value="新增套票" class="btn" />
+      </form>
+    </section>
+    <section class="container">
+      <div class="result-area">
+        <div class="search-btn">
+          <select class="input-box-card" id="searchArea">
+            <option value="" selected disabled>請選擇景點地區</option>
+            <option value="全部">全部</option>
+            <option value="台北">台北</option>
+            <option value="台中">台中</option>
+            <option value="高雄">高雄</option>
+            <option value="花蓮">花蓮</option>
+          </select>
+          <p>本次搜尋共 <span class="dataNum">6</span> 筆資料</p>
+        </div>
+        <div class="card-area">
+          <div class="card">
+            <div class="card-img">
+              <a href="#"
+                ><img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/js_week5/travel_1.png?raw=true"
+                  alt="travel-pic1"
+              /></a>
+              <div class="cardTagArea label-md">高雄</div>
+              <div class="cardTagRate fs-md">8.5</div>
+            </div>
+            <div class="card-body">
+              <div class="card-title">
+                <a href="#" class="label-md">綠島自由行套裝行程</a>
+              </div>
+              <div class="card-content">
+                嚴選超高CP值綠島自由行套裝行程，多種綠島套裝組合，提供台東綠島來回船票、綠島環島機車、綠島民宿住宿，行程加贈『綠島浮潛體驗』以及『綠島生態導覽』，讓你用輕鬆的綠島套裝自由行，也能深度認識綠島在地文化。
+              </div>
+              <div class="card-footer">
+                <div class="card-footer-content">
+                  <img src="/img/notice.svg" alt="notice-icon" />
+                  <p class="label-sm">剩下最後 87 組</p>
+                </div>
+                <p class="label-sm">TWD<span class="label-xl">$1400</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="all.js"></script>
+  </body>
+</html>
