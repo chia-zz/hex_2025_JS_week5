@@ -202,8 +202,10 @@ $bg-c: #fafafa;
 .alert-message {
   display: flex;
   gap: 8px;
+  color: #d95252;
+  margin-left: auto;
   p {
-    margin: 0;
+    margin: 4px 0;
   }
 }
 // input box
@@ -346,6 +348,9 @@ select {
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
+  .bi-exclamation-circle-fill {
+    color: $primary-400;
+  }
   .card-footer-content {
     display: flex;
     align-items: center;

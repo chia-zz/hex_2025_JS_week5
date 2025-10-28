@@ -73,18 +73,22 @@ li {
 
 .fs-lg {
   font-size: 20px;
+  line-height: 1.5;
 }
 
 .fs-md {
   font-size: 16px;
+  line-height: 1.5;
 }
 
 .fs-sm {
   font-size: 14px;
+  line-height: 1.5;
 }
 
 .fs-xs {
   font-size: 12px;
+  line-height: 1.5;
 }
 
 .label-xl {
@@ -219,10 +223,10 @@ li {
 .alert-message {
   display: flex;
   gap: 8px;
+  color: #d95252;
   margin-left: auto;
 }
 .alert-message p {
-  color: #d95252;
   margin: 4px 0;
 }
 
@@ -241,8 +245,8 @@ li {
 
 select {
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-image: url(/img/stepper.svg);
   background-position: right 8px center;
   background-repeat: no-repeat;
@@ -303,7 +307,7 @@ select:has(option:checked[value=""]) {
 .card-img {
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   position: relative;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -382,6 +386,9 @@ select:has(option:checked[value=""]) {
   align-items: center;
   margin-top: auto;
 }
+.card-footer .bi-exclamation-circle-fill {
+  color: #00807e;
+}
 .card-footer .card-footer-content {
   display: flex;
   align-items: center;
@@ -400,4 +407,4 @@ select:has(option:checked[value=""]) {
 }
 .card-area-none p {
   color: #00807e;
-} /*# sourceMappingURL=all.css.map */
+}/*# sourceMappingURL=all.css.map */

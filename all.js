@@ -29,7 +29,7 @@
               </div>
               <div class="card-footer">
                 <div class="card-footer-content">
-                  <img src="./img/notice.svg" alt="notice-icon" />
+                  <i class="bi bi-exclamation-circle-fill"></i>
                   <p class="label-sm">剩下最後 87 組</p>
                 </div>
                 <p class="label-sm">TWD<span class="label-xl">$1400</span></p>
@@ -138,7 +138,7 @@ function init() {
               </div>
               <div class="card-footer">
                 <div class="card-footer-content">
-                  <img src="./img/notice.svg" alt="notice-icon" />
+                  <i class="bi bi-exclamation-circle-fill"></i>
                   <p class="label-sm">剩下最後 ${item.ticketSet} 組</p>
                 </div>
                 <p class="label-sm">TWD<span class="label-xl">$${item.ticketPrice}</span></p>
@@ -187,7 +187,7 @@ filter.addEventListener("change", function (e) {
               </div>
               <div class="card-footer">
                 <div class="card-footer-content">
-                  <img src="./img/notice.svg" alt="notice-icon" />
+                  <i class="bi bi-exclamation-circle-fill"></i>
                   <p class="label-sm">剩下最後 ${item.ticketSet} 組</p>
                 </div>
                 <p class="label-sm">TWD<span class="label-xl">$${item.ticketPrice}</span></p>
@@ -215,7 +215,7 @@ filter.addEventListener("change", function (e) {
               </div>
               <div class="card-footer">
                 <div class="card-footer-content">
-                  <img src="./img/notice.svg" alt="notice-icon" />
+                  <i class="bi bi-exclamation-circle-fill"></i>
                   <p class="label-sm">剩下最後 ${item.ticketSet} 組</p>
                 </div>
                 <p class="label-sm">TWD<span class="label-xl">$${item.ticketPrice}</span></p>
@@ -279,7 +279,7 @@ btn.addEventListener("click", function (e) {
     const value = item.value;
     if (value.trim() == "") {
       alertMessages[index].innerHTML = `
-                <img src="./img/alert.svg" alt="alert-icon">
+                <i class="bi bi-exclamation-circle-fill"></i>
                 <p class="fs-sm">此欄必填！</p>
             `;
       isFormValid = false;
