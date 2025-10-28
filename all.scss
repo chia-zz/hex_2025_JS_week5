@@ -186,6 +186,26 @@ $bg-c: #fafafa;
   flex-direction: column;
   gap: 16px;
 }
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+.input-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  @media (max-width: 768px) {
+    gap: 8px;
+  }
+}
+.alert-message {
+  display: flex;
+  gap: 8px;
+  p {
+    margin: 0;
+  }
+}
 // input box
 .input-box-default {
   width: 74%;
@@ -210,15 +230,6 @@ select {
   }
   &:has(option:checked[value=""]) {
     color: $neutal-500;
-  }
-}
-.input-group {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 24px;
-  @media (max-width: 768px) {
-    gap: 8px;
   }
 }
 

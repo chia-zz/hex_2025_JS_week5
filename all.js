@@ -29,7 +29,7 @@
               </div>
               <div class="card-footer">
                 <div class="card-footer-content">
-                  <img src="/img/notice.svg" alt="notice-icon" />
+                  <img src="./img/notice.svg" alt="notice-icon" />
                   <p class="label-sm">剩下最後 87 組</p>
                 </div>
                 <p class="label-sm">TWD<span class="label-xl">$1400</span></p>
@@ -76,42 +76,42 @@ let data = [
     ticketDesc:
       "全館客房均提供谷關無色無味之優質碳酸原湯，並取用八仙山之山冷泉供蒞臨貴賓沐浴及飲水使用。",
   },
-  {
-    id: 3,
-    ticketName: "綠島自由行",
-    imgUrl:
-      "https://github.com/hexschool/2022-web-layout-training/blob/main/js_week5/travel_1.png?raw=true",
-    ticketArea: "高雄",
-    ticketPrice: 1280,
-    ticketSet: 8,
-    ticketRate: 8.6,
-    ticketDesc:
-      "嚴選超高CP值綠島自由行套裝行程，多種綠島套裝組合，提供台東綠島來回船票、綠島環島機車、綠島民宿住宿，行程加贈『綠島浮潛體驗』以及『綠島生態導覽』，讓你用輕鬆的綠島套裝自由行，也能深度認識綠島在地文化。",
-  },
-  {
-    id: 4,
-    ticketName: "山林悠遊雙人套票",
-    imgUrl:
-      "https://github.com/hexschool/2022-web-layout-training/blob/main/js_week5/travel_3.png?raw=true",
-    ticketArea: "台中",
-    ticketPrice: 880,
-    ticketSet: 10,
-    ticketRate: 8.6,
-    ticketDesc:
-      "山林悠遊套票，結合南投清境高空步道、雙龍瀑布七彩吊橋、瑞龍瀑布園區之熱門景點，帶您飽覽南投瑰麗的自然環境，體驗變化無窮的地形景觀，喜歡挑戰高空的您一定不可錯過。</br>（含雙龍瀑布入場券 x2）",
-  },
-  {
-    id: 5,
-    ticketName: "南庄度假村露營車二日遊",
-    imgUrl:
-      "https://github.com/hexschool/2022-web-layout-training/blob/main/js_week5/travel_6.png?raw=true",
-    ticketArea: "台中",
-    ticketPrice: 1280,
-    ticketSet: 2,
-    ticketRate: 9.6,
-    ticketDesc:
-      "南庄雲水豪華露營車，擁有最愜意的露營體驗吧！</br>一泊一食，輕鬆享受露營車樂趣。獨立衛浴與私人戶外露臺。入住豪華露營車還能使用戶外SPA大眾湯，感受美人湯魅力。",
-  },
+  // {
+  //   id: 3,
+  //   ticketName: "綠島自由行",
+  //   imgUrl:
+  //     "https://github.com/hexschool/2022-web-layout-training/blob/main/js_week5/travel_1.png?raw=true",
+  //   ticketArea: "高雄",
+  //   ticketPrice: 1280,
+  //   ticketSet: 8,
+  //   ticketRate: 8.6,
+  //   ticketDesc:
+  //     "嚴選超高CP值綠島自由行套裝行程，多種綠島套裝組合，提供台東綠島來回船票、綠島環島機車、綠島民宿住宿，行程加贈『綠島浮潛體驗』以及『綠島生態導覽』，讓你用輕鬆的綠島套裝自由行，也能深度認識綠島在地文化。",
+  // },
+  // {
+  //   id: 4,
+  //   ticketName: "山林悠遊雙人套票",
+  //   imgUrl:
+  //     "https://github.com/hexschool/2022-web-layout-training/blob/main/js_week5/travel_3.png?raw=true",
+  //   ticketArea: "台中",
+  //   ticketPrice: 880,
+  //   ticketSet: 10,
+  //   ticketRate: 8.6,
+  //   ticketDesc:
+  //     "山林悠遊套票，結合南投清境高空步道、雙龍瀑布七彩吊橋、瑞龍瀑布園區之熱門景點，帶您飽覽南投瑰麗的自然環境，體驗變化無窮的地形景觀，喜歡挑戰高空的您一定不可錯過。</br>（含雙龍瀑布入場券 x2）",
+  // },
+  // {
+  //   id: 5,
+  //   ticketName: "南庄度假村露營車二日遊",
+  //   imgUrl:
+  //     "https://github.com/hexschool/2022-web-layout-training/blob/main/js_week5/travel_6.png?raw=true",
+  //   ticketArea: "台中",
+  //   ticketPrice: 1280,
+  //   ticketSet: 2,
+  //   ticketRate: 9.6,
+  //   ticketDesc:
+  //     "南庄雲水豪華露營車，擁有最愜意的露營體驗吧！</br>一泊一食，輕鬆享受露營車樂趣。獨立衛浴與私人戶外露臺。入住豪華露營車還能使用戶外SPA大眾湯，感受美人湯魅力。",
+  // },
 ];
 
 const cardArea = document.querySelector(".card-area");
@@ -138,7 +138,7 @@ function init() {
               </div>
               <div class="card-footer">
                 <div class="card-footer-content">
-                  <img src="/img/notice.svg" alt="notice-icon" />
+                  <img src="./img/notice.svg" alt="notice-icon" />
                   <p class="label-sm">剩下最後 ${item.ticketSet} 組</p>
                 </div>
                 <p class="label-sm">TWD<span class="label-xl">$${item.ticketPrice}</span></p>
@@ -187,7 +187,7 @@ filter.addEventListener("change", function (e) {
               </div>
               <div class="card-footer">
                 <div class="card-footer-content">
-                  <img src="/img/notice.svg" alt="notice-icon" />
+                  <img src="./img/notice.svg" alt="notice-icon" />
                   <p class="label-sm">剩下最後 ${item.ticketSet} 組</p>
                 </div>
                 <p class="label-sm">TWD<span class="label-xl">$${item.ticketPrice}</span></p>
@@ -215,7 +215,7 @@ filter.addEventListener("change", function (e) {
               </div>
               <div class="card-footer">
                 <div class="card-footer-content">
-                  <img src="/img/notice.svg" alt="notice-icon" />
+                  <img src="./img/notice.svg" alt="notice-icon" />
                   <p class="label-sm">剩下最後 ${item.ticketSet} 組</p>
                 </div>
                 <p class="label-sm">TWD<span class="label-xl">$${item.ticketPrice}</span></p>
@@ -251,11 +251,44 @@ const ticketSet = document.querySelector("#ticketSet");
 const ticketRate = document.querySelector("#ticketRate");
 const ticketDesc = document.querySelector("#ticketDesc");
 const btn = document.querySelector(".btn");
+const alertMessages = document.querySelectorAll(".alert-message");
+const formInputs = [
+  // 驗證表單
+  ticketName,
+  imgUrl,
+  ticketArea,
+  ticketPrice,
+  ticketSet,
+  ticketRate,
+  ticketDesc,
+];
 let maxId = data.length - 1;
 let idNum = maxId;
 
 btn.addEventListener("click", function (e) {
+  e.preventDefault();
+
   let obj = {};
+
+  // 驗證表單空欄
+  alertMessages.forEach((item) => {
+    item.innerHTML = "";
+  });
+  let isFormValid = true; // 驗證是否為空
+  formInputs.forEach((item, index) => {
+    const value = item.value;
+    if (value.trim() == "") {
+      alertMessages[index].innerHTML = `
+                <img src="/img/alert.svg" alt="alert-icon">
+                <p class="fs-sm">此欄必填！</p>
+            `;
+      isFormValid = false;
+    }
+  });
+  if (!isFormValid) {
+    return;
+  }
+
   idNum += 1;
   obj.id = idNum;
   obj.ticketName = ticketName.value;
@@ -265,8 +298,26 @@ btn.addEventListener("click", function (e) {
   obj.ticketSet = ticketSet.value;
   obj.ticketRate = ticketRate.value;
   obj.ticketDesc = ticketDesc.value;
-  data.push(obj);
 
+  // 驗證表單空欄 <-如果用querySelector寫只會驗證到第一欄，但要驗證所有欄位
+  // if (
+  //   ticketName.value == "" ||
+  //   imgUrl.value == "" ||
+  //   ticketArea.value == "" ||
+  //   ticketPrice.value == "" ||
+  //   ticketSet.value == "" ||
+  //   ticketRate.value == "" ||
+  //   ticketDesc == ""
+  // ) {
+  //   alertMessage.innerHTML = `
+  //             <img src="/img/alert.svg" alt="alert-icon">
+  //             <p class="fs-sm">此欄必填！</p>
+  //             `;
+  //   return;
+  // }
+  // alertMessage.innerHTML = "";
+
+  data.push(obj);
   init();
   ticketName.value = "";
   imgUrl.value = "";
@@ -277,4 +328,4 @@ btn.addEventListener("click", function (e) {
   ticketDesc.value = "";
 });
 
-// console.log(data);
+// console.log(data); 檢查用
