@@ -279,7 +279,7 @@ btn.addEventListener("click", function (e) {
     const value = item.value;
     if (value.trim() == "") {
       alertMessages[index].innerHTML = `
-                <img src="/img/alert.svg" alt="alert-icon">
+                <img src="./img/alert.svg" alt="alert-icon">
                 <p class="fs-sm">此欄必填！</p>
             `;
       isFormValid = false;
@@ -310,7 +310,7 @@ btn.addEventListener("click", function (e) {
   //   ticketDesc == ""
   // ) {
   //   alertMessage.innerHTML = `
-  //             <img src="/img/alert.svg" alt="alert-icon">
+  //             <img src="./img/alert.svg" alt="alert-icon">
   //             <p class="fs-sm">此欄必填！</p>
   //             `;
   //   return;
